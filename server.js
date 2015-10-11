@@ -3,49 +3,83 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 var app     = express();
-var url = "";
+var url;
 var json;
+var data;
+var senadores = [];
 
-app.get('/scrape', function(req, res){
+url = 'http://www.senado.cl/appsenado/index.php?mo=senadores&ac=listado';
 
-  url = 'http://www.senado.cl/appsenado/index.php?mo=senadores&ac=fichasenador&id=905';
-  
-  request(url, function(error, response, html){
+request(url, function(error, response, html){
 
-    // First we'll check to make sure no errors occurred when making the request
+  //1)  Visitamos la página
 
-    if(!error){
-      // Next, we'll utilize the cheerio library on the returned html which will essentially give us jQuery functionality
-      console.log("no error");
-      var $ = cheerio.load(html);
+  if(!error){
+    // Empezamos a registrar
+    console.log("Accediendo a listado de senadores...");
+    var $ = cheerio.load(html);
 
-      // Finally, we'll define the variables we're going to capture
+    //var nombre, partido, telefono, mail;
+    //json = { nombre : "", partido : "", telefono : "", mail : ""};
 
-      var nombre, partido, telefono, mail;
-      json = { nombre : "", partido : "", telefono : "", mail : ""};
-      
-      nombre = $('section.seccion1 .info h1.serif').text();
-      
-      console.log("nombre: " + nombre);
-      json.nombre = nombre;
-      
-      fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
+    data = $('table td:last-child');
+    //console.log(data);
+    //Los elementos en las posiciones pares, tienen la información de los senadores
+    //el html tiene la siguiente estructura
+    //  <td style="width: 85%;">
+    //    <div><a href="/appsenado/index.php?mo=senadores&amp;ac=fichasenador&amp;id=905">Allamand Zavala, Andrés</a></div>
+    //    <div>Región: <strong>Región Metropolitana </strong> | Circunscripción: <strong>7</strong></div>
+    //    <div>Teléfono: (56-32) 2504701 | Email:<a href="mailto:allamand@senado.cl">allamand@senado.cl</a></div>
+    //  </td>
 
-        console.log('File successfully written! - Check your project directory for the output.json file');
-      
-      });
-      
-    }else{
-      console.log("some error");
-    }
-  });
+    //Los elementos en las posiciones impares, contienen el partido del senado
+    //el html tiene la siguiente estructura
+    //  <td>
+    //    Partido: <strong>R.N.</strong>
+    //  </td>
+    data.each(function(i, elem){
+      var nombre, region, circunscripcion, telefono, mail, str;
+      var senador = {};
+      //console.log($(this).find("div").first().text());
+      //pares
+      if(i%2==0){
+        nombre = $(this).find("div").first().text();
+        console.log("nombre: " + nombre);
+        region = $(this).find("div:nth-child(2)").find("strong").first().text();
+        console.log("region: " + region);
+        circunscripcion = $(this).find("div:nth-child(2)").find("strong").first().next().text();
+        console.log("circunscripcion: " + circunscripcion);
+        str = $(this).find("div").last().text();
+        telefono = str.substr(str.indexOf("("), 15);
+        console.log("telefono: " + telefono);
+        mail = $(this).find("div:nth-child(3)").find("a").text();
+        console.log("mail: " + mail);
 
+        //creo el senador
+        senador.nombre = nombre;
+        senador.region = region;
+        senador.circunscripcion = circunscripcion;
+        senador.telefono = telefono;
+        senador.mail = mail;
+
+        //lo agrego al arreglo de senadores
+        senadores.push(senador);
+      }
+      //impares
+      if(i%2==1){
+
+      }
+    });
+    //console.log("nombre: " + nombre);
+    //json.nombre = nombre;
+
+    fs.writeFile('output.json', JSON.stringify(senadores, null, 4), function(err){
+
+      console.log('File successfully written! - Check your project directory for the output.json file');
+
+    });
+
+  }else{
+    console.log("Hubo un error: " + error);
+  }
 });
-
-
-
-app.listen(process.env.PORT);
-
-console.log('Magic happens on port ' + process.env.PORT);
-
-exports = module.exports = app;

@@ -1,6 +1,142 @@
-{
-    "nombre": "Andrés Allamand Zavala",
-    "partido": "",
-    "telefono": "",
-    "mail": ""
-}
+[
+    {
+        "nombre": "Allamand Zavala, Andrés",
+        "region": "Región Metropolitana ",
+        "circunscripcion": "7",
+        "telefono": "(56-32) 2504701",
+        "mail": "allamand@senado.cl"
+    },
+    {
+        "nombre": "Allende Bussi, Isabel",
+        "region": "Región de Atacama",
+        "circunscripcion": "3",
+        "telefono": "(56-32) 2504671",
+        "mail": "iallende@senado.cl"
+    },
+    {
+        "nombre": "Bianchi Chelech, Carlos",
+        "region": "Región de Magallanes y la Antártica Chilena\n\n",
+        "circunscripcion": "19",
+        "telefono": "(56-32) 2504566",
+        "mail": "cbianchi@senado.cl"
+    },
+    {
+        "nombre": "Coloma Correa, Juan Antonio",
+        "region": "Región del Maule",
+        "circunscripcion": "10",
+        "telefono": "(56-32) 2504505",
+        "mail": "jcoloma@senado.cl"
+    },
+    {
+        "nombre": "Espina Otero, Alberto",
+        "region": "Región de la Araucanía",
+        "circunscripcion": "14",
+        "telefono": "(56-32) 2504508",
+        "mail": "aespina@senado.cl"
+    },
+    {
+        "nombre": "García Ruminot, José",
+        "region": "Región de la Araucanía",
+        "circunscripcion": "15",
+        "telefono": "(56-32) 2504512",
+        "mail": "jgarcia@senado.cl"
+    },
+    {
+        "nombre": "Goic Boroevic, Carolina",
+        "region": "Región de Magallanes y la Antártica Chilena\n\n",
+        "circunscripcion": "19",
+        "telefono": "(56-32) 2504707",
+        "mail": "cgoic@senado.cl"
+    },
+    {
+        "nombre": "Harboe Bascuñán, Felipe",
+        "region": "Región del Bío-Bío",
+        "circunscripcion": "13",
+        "telefono": "(56-32) 2504711",
+        "mail": "fharboe@senado.cl"
+    },
+    {
+        "nombre": "Lagos Weber, Ricardo",
+        "region": "Región de Valparaíso",
+        "circunscripcion": "6",
+        "telefono": "(56-32) 2504675",
+        "mail": "rlagos@senado.cl"
+    },
+    {
+        "nombre": "Letelier Morel, Juan Pablo",
+        "region": "Región del Libertador General Bernardo O'Higgins",
+        "circunscripcion": "9",
+        "telefono": "(56-32) 2504576",
+        "mail": "jpletelier@senado.cl"
+    },
+    {
+        "nombre": "Montes Cisternas, Carlos",
+        "region": "Región Metropolitana ",
+        "circunscripcion": "8",
+        "telefono": "(56-32)  4714 |",
+        "mail": "cmontes@senado.cl"
+    },
+    {
+        "nombre": "Muñoz D`Albora, Adriana",
+        "region": "Región de Coquimbo\n\n",
+        "circunscripcion": "4",
+        "telefono": "(56-32) 2504717",
+        "mail": "amunoz@senado.cl"
+    },
+    {
+        "nombre": "Orpis Bouchon, Jaime",
+        "region": "Región de Tarapacá\n\n",
+        "circunscripcion": "1",
+        "telefono": "(56-32) 2504515",
+        "mail": "jorpis@senado.cl"
+    },
+    {
+        "nombre": "Pérez San Martín, Lily",
+        "region": "Región de Valparaíso",
+        "circunscripcion": "5",
+        "telefono": "(56-32) 2504677",
+        "mail": "lperez@senado.cl"
+    },
+    {
+        "nombre": "Pizarro Soto, Jorge",
+        "region": "Región de Coquimbo\n\n",
+        "circunscripcion": "4",
+        "telefono": "(56-32) 2504260",
+        "mail": "jpizarro@senado.cl"
+    },
+    {
+        "nombre": "Quintana Leal, Jaime",
+        "region": "Región de la Araucanía",
+        "circunscripcion": "14",
+        "telefono": "(56-32) 2504679",
+        "mail": "jquintana@senado.cl"
+    },
+    {
+        "nombre": "Rossi Ciocca, Fulvio",
+        "region": "Región de Tarapacá\n\n",
+        "circunscripcion": "1",
+        "telefono": "(56-32) 2504683",
+        "mail": "frossi@senado.cl"
+    },
+    {
+        "nombre": "Van Rysselberghe Herrera, Jacqueline",
+        "region": "Región del Bío-Bío",
+        "circunscripcion": "12",
+        "telefono": "(56-32) 2504723",
+        "mail": "jvanr@senado.cl"
+    },
+    {
+        "nombre": "Walker Prieto, Ignacio",
+        "region": "Región de Valparaíso",
+        "circunscripcion": "5",
+        "telefono": "(56-32) 2504687",
+        "mail": "iwalker@senado.cl"
+    },
+    {
+        "nombre": "Zaldívar Larraín, Andrés",
+        "region": "Región del Maule",
+        "circunscripcion": "10",
+        "telefono": "(56-32) 2504691",
+        "mail": "azaldivar@senado.cl"
+    }
+]
