@@ -19,9 +19,6 @@ request(url, function(error, response, html){
     console.log("Accediendo a listado de senadores...");
     var $ = cheerio.load(html);
 
-    //var nombre, partido, telefono, mail;
-    //json = { nombre : "", partido : "", telefono : "", mail : ""};
-
     data = $('table td:last-child');
     //console.log(data);
     //Los elementos en las posiciones pares, tienen la información de los senadores
@@ -38,22 +35,24 @@ request(url, function(error, response, html){
     //    Partido: <strong>R.N.</strong>
     //  </td>
     data.each(function(i, elem){
-      var nombre, region, circunscripcion, telefono, mail, str;
+      var nombre, region, circunscripcion, telefono, mail, str, partido;
       var senador = {};
-      //console.log($(this).find("div").first().text());
+
       //pares
       if(i%2==0){
         nombre = $(this).find("div").first().text();
-        console.log("nombre: " + nombre);
+        //console.log("nombre: " + nombre);
         region = $(this).find("div:nth-child(2)").find("strong").first().text();
-        console.log("region: " + region);
+        //console.log("region: " + region);
         circunscripcion = $(this).find("div:nth-child(2)").find("strong").first().next().text();
-        console.log("circunscripcion: " + circunscripcion);
+        //console.log("circunscripcion: " + circunscripcion);
         str = $(this).find("div").last().text();
         telefono = str.substr(str.indexOf("("), 15);
-        console.log("telefono: " + telefono);
+        //console.log("telefono: " + telefono);
         mail = $(this).find("div:nth-child(3)").find("a").text();
-        console.log("mail: " + mail);
+        //console.log("mail: " + mail);
+
+        console.log($(this));
 
         //creo el senador
         senador.nombre = nombre;
@@ -64,15 +63,19 @@ request(url, function(error, response, html){
 
         //lo agrego al arreglo de senadores
         senadores.push(senador);
-      }
-      //impares
-      if(i%2==1){
 
+      //impares
+      }else{
+        //partido = $(this).find("strong").text();
+        //console.log($(this)[0]);
+        //senador = senadores[senadores.length - 1];
+        //senador.partido = partido;
+        //senadores[senadores.length - 1] = senador;
       }
     });
-    //console.log("nombre: " + nombre);
-    //json.nombre = nombre;
 
+    data = $('');
+    
     fs.writeFile('output.json', JSON.stringify(senadores, null, 4), function(err){
 
       console.log('File successfully written! - Check your project directory for the output.json file');
