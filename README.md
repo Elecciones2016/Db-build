@@ -1,5 +1,6 @@
 # Scripts para generar la BD de la API #
 
+[![Build Status](https://travis-ci.org/Elecciones2016/Db-build.svg?branch=master)](https://travis-ci.org/Elecciones2016/Db-build)
 [![Code Climate](https://codeclimate.com/github/Elecciones2016/Db-build/badges/gpa.svg)](https://codeclimate.com/github/Elecciones2016/Db-build)
 
 Con este script se puede construir la base de datos en MongoDB que proverá de datos a la API
