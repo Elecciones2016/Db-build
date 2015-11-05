@@ -71,7 +71,7 @@ exports.run = function(){
 
       fs.writeFile('senadores/senadores.json', JSON.stringify(senadores, null, 4), function(err){
         if(err){
-          console.log(err)
+          console.log(err);
         }
 
       });
@@ -80,4 +80,4 @@ exports.run = function(){
       console.log("Hubo un error: " + error);
     }
   });
-}
+};
