@@ -32,11 +32,11 @@ exports.run = function(){
       //    Partido: <strong>R.N.</strong>
       //  </td>
       data.each(function(i, elem){
-        var nombre, region, circunscripcion, telefono, mail, str, partido;
+        var nombre, region, circunscripcion, telefono, mail, str;
         var senador = {};
 
         //pares
-        if(i%2==0){
+        if(i%2===0){
           nombre = $(this).find("div").first().text();
           //console.log("nombre: " + nombre);
           region = $(this).find("div:nth-child(2)").find("strong").first().text();

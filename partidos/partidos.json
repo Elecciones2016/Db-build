@@ -1,0 +1,192 @@
+[
+    {
+        "nombre": "Partido Unión Demócrata Independiente",
+        "integrantes": 8,
+        "senadores": [
+            {
+                "nombre": " Juan Antonio",
+                "apellido": "Coloma Correa"
+            },
+            {
+                "nombre": " Alejandro",
+                "apellido": "Garc&#xED;a Huidobro Sanfuentes"
+            },
+            {
+                "nombre": " Hern&#xE1;n",
+                "apellido": "Larra&#xED;n Fern&#xE1;ndez"
+            },
+            {
+                "nombre": " Iv&#xE1;n",
+                "apellido": "Moreira Barros"
+            },
+            {
+                "nombre": " Jaime",
+                "apellido": "Orpis Bouchon"
+            },
+            {
+                "nombre": " V&#xED;ctor",
+                "apellido": "P&#xE9;rez Varela"
+            },
+            {
+                "nombre": " Jacqueline",
+                "apellido": "Van Rysselberghe Herrera"
+            },
+            {
+                "nombre": " Ena",
+                "apellido": "Von Baer Jahn"
+            }
+        ]
+    },
+    {
+        "nombre": "Partido Democrata Cristiano e Independiente",
+        "integrantes": 7,
+        "senadores": [
+            {
+                "nombre": " Pedro",
+                "apellido": "Araya Guerrero"
+            },
+            {
+                "nombre": " Carolina",
+                "apellido": "Goic Boroevic"
+            },
+            {
+                "nombre": " Manuel Antonio",
+                "apellido": "Matta Aragay"
+            },
+            {
+                "nombre": " Jorge",
+                "apellido": "Pizarro Soto"
+            },
+            {
+                "nombre": " Ignacio",
+                "apellido": "Walker Prieto"
+            },
+            {
+                "nombre": " Patricio",
+                "apellido": "Walker Prieto"
+            },
+            {
+                "nombre": " Andr&#xE9;s",
+                "apellido": "Zald&#xED;var Larra&#xED;n"
+            }
+        ]
+    },
+    {
+        "nombre": "Partido Renovacion Nacional",
+        "integrantes": 6,
+        "senadores": [
+            {
+                "nombre": " Andr&#xE9;s",
+                "apellido": "Allamand Zavala"
+            },
+            {
+                "nombre": " Francisco",
+                "apellido": "Chahu&#xE1;n Chahu&#xE1;n"
+            },
+            {
+                "nombre": " Alberto",
+                "apellido": "Espina Otero"
+            },
+            {
+                "nombre": " Jos&#xE9;",
+                "apellido": "Garc&#xED;a Ruminot"
+            },
+            {
+                "nombre": " Manuel Jos&#xE9;",
+                "apellido": "Ossand&#xF3;n Irarr&#xE1;zabal"
+            },
+            {
+                "nombre": " Baldo",
+                "apellido": "Prokurica Prokurica"
+            }
+        ]
+    },
+    {
+        "nombre": "Partido Socialista",
+        "integrantes": 6,
+        "senadores": [
+            {
+                "nombre": " Isabel",
+                "apellido": "Allende Bussi"
+            },
+            {
+                "nombre": " Alfonso",
+                "apellido": "De Urresti Longton"
+            },
+            {
+                "nombre": " Juan Pablo",
+                "apellido": "Letelier Morel"
+            },
+            {
+                "nombre": " Carlos",
+                "apellido": "Montes Cisternas"
+            },
+            {
+                "nombre": " Rabindranath",
+                "apellido": "Quinteros Lara"
+            },
+            {
+                "nombre": " Fulvio",
+                "apellido": "Rossi Ciocca"
+            }
+        ]
+    },
+    {
+        "nombre": "Partido Por la Democracia",
+        "integrantes": 6,
+        "senadores": [
+            {
+                "nombre": " Guido",
+                "apellido": "Girardi Lav&#xED;n"
+            },
+            {
+                "nombre": " Felipe",
+                "apellido": "Harboe Bascu&#xF1;&#xE1;n"
+            },
+            {
+                "nombre": " Ricardo",
+                "apellido": "Lagos Weber"
+            },
+            {
+                "nombre": " Adriana",
+                "apellido": "Mu&#xF1;oz D`Albora"
+            },
+            {
+                "nombre": " Jaime",
+                "apellido": "Quintana Leal"
+            },
+            {
+                "nombre": " Eugenio",
+                "apellido": "Tuma Zed&#xE1;n"
+            }
+        ]
+    },
+    {
+        "nombre": "Independientes",
+        "integrantes": 3,
+        "senadores": [
+            {
+                "nombre": " Alejandro",
+                "apellido": "Guillier &#xC1;lvarez"
+            },
+            {
+                "nombre": " Antonio",
+                "apellido": "Horvath Kiss"
+            },
+            {
+                "nombre": " Lily",
+                "apellido": "P&#xE9;rez San Mart&#xED;n"
+            }
+        ]
+    },
+    {
+        "nombre": "Partido MAS (Movimiento Amplio Social)",
+        "integrantes": 1,
+        "senadores": [
+            {
+                "nombre": " Alejandro",
+                "apellido": "Navarro Brain"
+            }
+        ]
+    }
+]
