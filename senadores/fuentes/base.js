@@ -35,8 +35,6 @@ exports.run = function(){
         var nombre, region, circunscripcion, telefono, mail, str;
         var senador = {};
 
-        //pares
-        if(i%2===0){
           nombre = $(this).find("div").first().text();
           //console.log("nombre: " + nombre);
           region = $(this).find("div:nth-child(2)").find("strong").first().text();
@@ -58,15 +56,6 @@ exports.run = function(){
 
           //lo agrego al arreglo de senadores
           senadores.push(senador);
-
-        //impares
-        }else{
-          //partido = $(this).find("strong").text();
-          //console.log($(this)[0]);
-          //senador = senadores[senadores.length - 1];
-          //senador.partido = partido;
-          //senadores[senadores.length - 1] = senador;
-        }
       });
 
       fs.writeFile('senadores/senadores.json', JSON.stringify(senadores, null, 4), function(err){
