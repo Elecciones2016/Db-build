@@ -1,9 +1,11 @@
 var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
+var _ = require('underscore');
 var url;
 var data;
-var senadores = [];
+var senadores = []; 
+var nombres = [];
 
 url = 'http://www.senado.cl/appsenado/index.php?mo=senadores&ac=listado';
 
@@ -55,7 +57,14 @@ exports.run = function(){
           senador.mail = mail;
 
           //lo agrego al arreglo de senadores
-          senadores.push(senador);
+          if (!_.contains(nombres, nombre)){
+            senadores.push(senador);  
+          }
+          
+          
+          nombres = _.map(senadores, function(s){
+            return s.nombre;
+          });
       });
 
       fs.writeFile('senadores/senadores.json', JSON.stringify(senadores, null, 4), function(err){
