@@ -23,27 +23,36 @@ exports.run = function(){
          */
         var nombre, integrantes, senadores;
         var partido = {};
-        var newSenadores = [];
         
         nombre = $(this).find("th").first().text();
         
+        //se usa .html() en vez de .text() para poder separar por <br>, pero provoca problemas con las tildes
         senadores = $(this).find("tr").last().children().last().html().split("<br>");
         
-        for(var i = 0; i< senadores.length; i++){
-          var senador = {};
-          var arr = senadores[i].split(",");
+        //por lo que se remueven manualmente las tildes
+        
+        //  á = &#xE1;
+        //  é = &#xE9;
+        //  í = &#xED;
+        //  ó = &#xF3;
+        //  ú =       --> no hay
+        //  ñ = &#xF1;
+        
+        for(var j=0;j<senadores.length;j++){
+          senadores[j] = senadores[j].replace("&#xE1;", "á");
+          senadores[j] = senadores[j].replace("&#xE9;", "é");
+          senadores[j] = senadores[j].replace("&#xED;", "í");
+          senadores[j] = senadores[j].replace("&#xF3;", "ó");
+          senadores[j] = senadores[j].replace("&#xF1;", "ñ");
           
-          senador.nombre = arr[1];
-          senador.apellido = arr[0];
-          
-          newSenadores.push(senador);
         }
+        console.log(senadores);
         
         integrantes = senadores.length;
         
         partido.nombre = nombre;
         partido.integrantes = integrantes;
-        partido.senadores = newSenadores;
+        partido.senadores = senadores;
         
         partidos.push(partido);
       });
