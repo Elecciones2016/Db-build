@@ -12,7 +12,7 @@ fs.readFile('senadores/senadores.json', function(err, data){
 
   _senadores = JSON.parse(data);
 
-  console.log(_senadores);
+  //console.log(_senadores);
 });
 
 describe("Senadores", function(){
@@ -44,10 +44,43 @@ describe("Senadores", function(){
   //  3-
   describe("los senadores", function(){
 
-    it("debe contener 38 senadores", function(){
-      //faltan!!
+    it("deben ser 38", function(){
       expect(_senadores).to.have.length(38);
     });
+    
+    //  4 y 5 -
+    it("deben tener nombre, de tipo String", function(){
+      //recorriendo arreglos a la vieja escuela
+      for(var i = 0; i<_senadores.length;i++){
+        expect(_senadores[i]).to.have.property("nombre");
+        expect(_senadores[i].nombre).to.be.a('string');
+      }
+    });
+    
+    it("deben tener mail, de tipo String", function(){
+      //recorriendo arreglos a la vieja escuela
+      for(var i = 0; i<_senadores.length;i++){
+        expect(_senadores[i]).to.have.property("mail");
+        expect(_senadores[i].mail).to.be.a('string');
+      }
+    });
+    
+    it("deben tener circunscripción, de tipo number", function(){
+      //recorriendo arreglos a la vieja escuela
+      for(var i = 0; i<_senadores.length;i++){
+        expect(_senadores[i]).to.have.property("circunscripcion");
+        expect(_senadores[i].circunscripcion).to.be.a('number');
+      }
+    });
+    
+    it("deben tener telefono, de tipo String", function(){
+      //recorriendo arreglos a la vieja escuela
+      for(var i = 0; i<_senadores.length;i++){
+        expect(_senadores[i]).to.have.property("telefono");
+        expect(_senadores[i].telefono).to.be.a('string');
+      }
+    });
+    
   });
 
 

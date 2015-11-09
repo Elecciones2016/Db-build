@@ -41,7 +41,7 @@ exports.run = function(){
           //console.log("nombre: " + nombre);
           region = $(this).find("div:nth-child(2)").find("strong").first().text();
           //console.log("region: " + region);
-          circunscripcion = $(this).find("div:nth-child(2)").find("strong").first().next().text();
+          circunscripcion = parseInt($(this).find("div:nth-child(2)").find("strong").first().next().text());
           //console.log("circunscripcion: " + circunscripcion);
           str = $(this).find("div").last().text();
           telefono = str.substr(str.indexOf("("), 15);
