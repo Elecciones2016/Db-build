@@ -2,7 +2,8 @@
 
 ## Senadores
 
-![senadores](https://cloud.githubusercontent.com/assets/5105812/11071729/13c41736-87c1-11e5-869c-c4ff3f0a4ef8.png)
+![modelo de datos - new page](https://cloud.githubusercontent.com/assets/5105812/11173694/66b565d6-8bf8-11e5-9f15-0eac2c0ed97c.png)
+
 
 A continuación se presenta un ejemplo para cada colección de la base de datos. Es necesario considerar
 
@@ -11,7 +12,36 @@ A continuación se presenta un ejemplo para cada colección de la base de datos.
 * _la base de datos no es necesariamente igual que la API o los archivos `.json` generados_
 
 ### Sesion
+
+    {
+      "_id" : 123124342,
+      "legislatura" : 363,
+      "numero" : 69,
+      "tipo" : "ordinaria",
+      "fecha" : ISODate("2015-11-11")
+    }
+
 ### Comision
+
+    {
+      "_id" : 123123123,
+      "nombre" : "de Educación y Cultura",
+      "senadores" : [
+          5002921,
+          1111111,
+          2222222,
+          4444444
+        ],
+      "presidente" : {
+        "nombre" : "Quintana Leal, Jaime",
+        "rut" : 33333333
+      },
+      "secretario" : {
+        "nombre" : "Vives , Francisco",
+        "rut" : 6666666
+      }
+    }
+
 ### Senadores
 
     {
@@ -24,16 +54,16 @@ A continuación se presenta un ejemplo para cada colección de la base de datos.
       "mail" : "allamand@senado.cl",
       "asistencia" : [
           {
-            "fecha" : ISODate("2015-11-11"),
-            "lugar" : "Sala de Sesiones (Valparaiso)",
-            "sala" : "Sesion 69 Legislatura 363",
-            "comision" : null
+            "comision_id" : 123123123,
+            "total" : 25,
+            "asiste" : 21,
+            "justifica" : null
           },
           {
-            "fecha" : ISODate("2015-11-11"),
-            "lugar" : "Sala N° 8, (Valparaíso)",
-            "sala" : null,
-            "comision" : "de Educación y Cultura"
+            "legislatura" : 363,
+            "total" : 71,
+            "asiste" : 68,
+            "justifica" : 0
           },
           {
             ...
