@@ -2,9 +2,10 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 var _ = require('underscore');
+var ruts = require('./../../comunes/ruts.js');
 var url;
 var data;
-var senadores = []; 
+var senadores = [];
 var nombres = [];
 
 url = 'http://www.senado.cl/appsenado/index.php?mo=senadores&ac=listado';
@@ -34,11 +35,13 @@ exports.run = function(){
       //    Partido: <strong>R.N.</strong>
       //  </td>
       data.each(function(i, elem){
-        var nombre, region, circunscripcion, telefono, mail, str;
+        var nombre, region, circunscripcion, telefono, mail, str, rut;
         var senador = {};
 
           nombre = $(this).find("div").first().text();
           //console.log("nombre: " + nombre);
+          rut = ruts.getRut(ruts.prepareName(nombre));
+          console.log(rut);
           region = $(this).find("div:nth-child(2)").find("strong").first().text();
           //console.log("region: " + region);
           circunscripcion = parseInt($(this).find("div:nth-child(2)").find("strong").first().next().text());
@@ -51,6 +54,7 @@ exports.run = function(){
 
           //creo el senador
           senador.nombre = nombre;
+          senador.rut = rut;
           senador.region = region;
           senador.circunscripcion = circunscripcion;
           senador.telefono = telefono;
@@ -58,10 +62,10 @@ exports.run = function(){
 
           //lo agrego al arreglo de senadores
           if (!_.contains(nombres, nombre)){
-            senadores.push(senador);  
+            senadores.push(senador);
           }
-          
-          
+
+
           nombres = _.map(senadores, function(s){
             return s.nombre;
           });

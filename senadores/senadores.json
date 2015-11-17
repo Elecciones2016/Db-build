@@ -1,6 +1,7 @@
 [
     {
         "nombre": "Allamand Zavala, Andrés",
+        "rut": "5002921-2",
         "region": "Región Metropolitana ",
         "circunscripcion": 7,
         "telefono": "(56-32) 2504701",
@@ -8,6 +9,7 @@
     },
     {
         "nombre": "Allende Bussi, Isabel",
+        "rut": null,
         "region": "Región de Atacama",
         "circunscripcion": 3,
         "telefono": "(56-32) 2504671",
@@ -15,6 +17,7 @@
     },
     {
         "nombre": "Araya Guerrero, Pedro",
+        "rut": "12615234-5",
         "region": "Región de Antofagasta",
         "circunscripcion": 2,
         "telefono": "(56-32) 2504703",
@@ -22,6 +25,7 @@
     },
     {
         "nombre": "Bianchi Chelech, Carlos",
+        "rut": "7452450-8",
         "region": "Región de Magallanes y la Antártica Chilena\n\n",
         "circunscripcion": 19,
         "telefono": "(56-32) 2504566",
@@ -29,6 +33,7 @@
     },
     {
         "nombre": "Chahuán Chahuán, Francisco",
+        "rut": null,
         "region": "Región de Valparaíso",
         "circunscripcion": 6,
         "telefono": "(56-32) 2504673",
@@ -36,6 +41,7 @@
     },
     {
         "nombre": "Coloma Correa, Juan Antonio",
+        "rut": "13829856-6",
         "region": "Región del Maule",
         "circunscripcion": 10,
         "telefono": "(56-32) 2504505",
@@ -43,6 +49,7 @@
     },
     {
         "nombre": "De Urresti Longton, Alfonso",
+        "rut": null,
         "region": "Región de los Ríos",
         "circunscripcion": 16,
         "telefono": "l",
@@ -50,6 +57,7 @@
     },
     {
         "nombre": "Espina Otero, Alberto",
+        "rut": null,
         "region": "Región de la Araucanía",
         "circunscripcion": 14,
         "telefono": "(56-32) 2504508",
@@ -57,6 +65,7 @@
     },
     {
         "nombre": "García Huidobro Sanfuentes, Alejandro",
+        "rut": null,
         "region": "Región del Libertador General Bernardo O'Higgins",
         "circunscripcion": 9,
         "telefono": "(56 32) 2504667",
@@ -64,6 +73,7 @@
     },
     {
         "nombre": "García Ruminot, José",
+        "rut": null,
         "region": "Región de la Araucanía",
         "circunscripcion": 15,
         "telefono": "(56-32) 2504512",
@@ -71,6 +81,7 @@
     },
     {
         "nombre": "Girardi Lavín, Guido",
+        "rut": "8462985-5",
         "region": "Región Metropolitana ",
         "circunscripcion": 7,
         "telefono": "(56-32) 2504570",
@@ -78,6 +89,7 @@
     },
     {
         "nombre": "Goic Boroevic, Carolina",
+        "rut": "8124187-2",
         "region": "Región de Magallanes y la Antártica Chilena\n\n",
         "circunscripcion": 19,
         "telefono": "(56-32) 2504707",
@@ -85,6 +97,7 @@
     },
     {
         "nombre": "Guillier Álvarez, Alejandro",
+        "rut": "7054381-8",
         "region": "Región de Antofagasta",
         "circunscripcion": 2,
         "telefono": "l",
@@ -92,6 +105,7 @@
     },
     {
         "nombre": "Harboe Bascuñán, Felipe",
+        "rut": "8826664-1",
         "region": "Región del Bío-Bío",
         "circunscripcion": 13,
         "telefono": "(56-32) 2504711",
@@ -99,6 +113,7 @@
     },
     {
         "nombre": "Horvath Kiss, Antonio",
+        "rut": "10530214-2",
         "region": "Región de Aysén del General Carlos Ibáñez del Campo ",
         "circunscripcion": 18,
         "telefono": "(56-32) 2504427",
@@ -106,6 +121,7 @@
     },
     {
         "nombre": "Lagos Weber, Ricardo",
+        "rut": null,
         "region": "Región de Valparaíso",
         "circunscripcion": 6,
         "telefono": "(56-32) 2504675",
@@ -113,6 +129,7 @@
     },
     {
         "nombre": "Larraín Fernández, Hernán",
+        "rut": null,
         "region": "Región del Maule",
         "circunscripcion": 11,
         "telefono": "(56-32) 2504423",
@@ -120,6 +137,7 @@
     },
     {
         "nombre": "Letelier Morel, Juan Pablo",
+        "rut": "7049575-9",
         "region": "Región del Libertador General Bernardo O'Higgins",
         "circunscripcion": 9,
         "telefono": "(56-32) 2504576",
@@ -127,6 +145,7 @@
     },
     {
         "nombre": "Matta Aragay, Manuel Antonio",
+        "rut": null,
         "region": "Región del Maule",
         "circunscripcion": 11,
         "telefono": "(56-32) 2504725",
@@ -134,6 +153,7 @@
     },
     {
         "nombre": "Montes Cisternas, Carlos",
+        "rut": "4778821-8",
         "region": "Región Metropolitana ",
         "circunscripcion": 8,
         "telefono": "(56-32)  4714 |",
@@ -141,6 +161,7 @@
     },
     {
         "nombre": "Moreira Barros, Iván",
+        "rut": "6364944-9",
         "region": "Región de Los Lagos",
         "circunscripcion": 17,
         "telefono": "(56-32) 2504715",
@@ -148,6 +169,7 @@
     },
     {
         "nombre": "Muñoz D`Albora, Adriana",
+        "rut": "6025646-2",
         "region": "Región de Coquimbo\n\n",
         "circunscripcion": 4,
         "telefono": "(56-32) 2504717",
@@ -155,6 +177,7 @@
     },
     {
         "nombre": "Navarro Brain, Alejandro",
+        "rut": "8510034-3",
         "region": "Región del Bío-Bío",
         "circunscripcion": 12,
         "telefono": "(56-32) 2504582",
@@ -162,6 +185,7 @@
     },
     {
         "nombre": "Orpis Bouchon, Jaime",
+        "rut": null,
         "region": "Región de Tarapacá\n\n",
         "circunscripcion": 1,
         "telefono": "(56-32) 2504515",
@@ -169,6 +193,7 @@
     },
     {
         "nombre": "Ossandón Irarrázabal, Manuel José",
+        "rut": "7022006-7",
         "region": "Región Metropolitana ",
         "circunscripcion": 8,
         "telefono": "(56-32) 2504719",
@@ -176,6 +201,7 @@
     },
     {
         "nombre": "Pérez San Martín, Lily",
+        "rut": null,
         "region": "Región de Valparaíso",
         "circunscripcion": 5,
         "telefono": "(56-32) 2504677",
@@ -183,6 +209,7 @@
     },
     {
         "nombre": "Pérez Varela, Víctor",
+        "rut": "7224810-4",
         "region": "Región del Bío-Bío",
         "circunscripcion": 13,
         "telefono": "(56-32) 2504584",
@@ -190,6 +217,7 @@
     },
     {
         "nombre": "Pizarro Soto, Jorge",
+        "rut": "6033019-0",
         "region": "Región de Coquimbo\n\n",
         "circunscripcion": 4,
         "telefono": "(56-32) 2504260",
@@ -197,6 +225,7 @@
     },
     {
         "nombre": "Prokurica Prokurica, Baldo",
+        "rut": null,
         "region": "Región de Atacama",
         "circunscripcion": 3,
         "telefono": "(56-32) 2504518",
@@ -204,6 +233,7 @@
     },
     {
         "nombre": "Quintana Leal, Jaime",
+        "rut": null,
         "region": "Región de la Araucanía",
         "circunscripcion": 14,
         "telefono": "(56-32) 2504679",
@@ -211,6 +241,7 @@
     },
     {
         "nombre": "Quinteros Lara, Rabindranath",
+        "rut": "4423698-2",
         "region": "Región de Los Lagos",
         "circunscripcion": 17,
         "telefono": "(56-32) 2504721",
@@ -218,6 +249,7 @@
     },
     {
         "nombre": "Rossi Ciocca, Fulvio",
+        "rut": null,
         "region": "Región de Tarapacá\n\n",
         "circunscripcion": 1,
         "telefono": "(56-32) 2504683",
@@ -225,6 +257,7 @@
     },
     {
         "nombre": "Tuma Zedán, Eugenio",
+        "rut": null,
         "region": "Región de la Araucanía",
         "circunscripcion": 15,
         "telefono": "(56-32) 2504685",
@@ -232,6 +265,7 @@
     },
     {
         "nombre": "Van Rysselberghe Herrera, Jacqueline",
+        "rut": null,
         "region": "Región del Bío-Bío",
         "circunscripcion": 12,
         "telefono": "(56-32) 2504723",
@@ -239,6 +273,7 @@
     },
     {
         "nombre": "Von Baer Jahn, Ena",
+        "rut": null,
         "region": "Región de los Ríos",
         "circunscripcion": 16,
         "telefono": "(56-32) 2504693",
@@ -246,6 +281,7 @@
     },
     {
         "nombre": "Walker Prieto, Ignacio",
+        "rut": null,
         "region": "Región de Valparaíso",
         "circunscripcion": 5,
         "telefono": "(56-32) 2504687",
@@ -253,6 +289,7 @@
     },
     {
         "nombre": "Walker Prieto, Patricio",
+        "rut": null,
         "region": "Región de Aysén del General Carlos Ibáñez del Campo ",
         "circunscripcion": 18,
         "telefono": "(56-32) 2504689",
@@ -260,6 +297,7 @@
     },
     {
         "nombre": "Zaldívar Larraín, Andrés",
+        "rut": null,
         "region": "Región del Maule",
         "circunscripcion": 10,
         "telefono": "(56-32) 2504691",
