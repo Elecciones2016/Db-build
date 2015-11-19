@@ -1,9 +1,12 @@
 var xlsx = require('xlsx');
+var request = require('request');
 
+/**
+ *  Obtiene el rut a partir del nombre que hay en los datos del SERVEL
+ */
 exports.getRut = function(nombre){
 
   var workbook = xlsx.readFile('data/DETALLE_INGRESOS_CANDIDATOS_ELECCION2013.xls');
-  //console.log(typeof workbook);
 
   var sheet_name = workbook.SheetNames[0];
   var sheet = workbook.Sheets[sheet_name];
@@ -18,6 +21,26 @@ exports.getRut = function(nombre){
   }
   return null;
 };
+
+/**
+ *  Obtiene el nombre a partir de
+ */
+exports.getRutFromUrl = function(nombre, url){
+  //si no se ingresa otra url, se usa la url por defecto
+  //por ahora se deja así, pero para que funcione efectivamente por cualquier url,
+  //se debiese recibir un objeto o más parametros, como los id de los inputs entre otros
+  if(typeof url === 'undefined') url = 'http://datos.24x7.cl/get_generic_ajax/';
+
+  request.post({
+    url: url,
+    form: {
+      entrada: nombre,
+      csrfmiddlewaretoken: "y31XFsEBf8JV0l8vXxgr9h346zwAKnqV"
+    }
+  }, function(err,httpResponse,body){
+    console.log(body);
+  });
+}
 
 /**
  *  "Allamand Zavala, Andrés"  =>  'ANDRES ALLAMAND'
